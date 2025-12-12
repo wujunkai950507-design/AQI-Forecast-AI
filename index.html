@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI 空氣品質預測系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>AI 空氣品質預測系統（AQI Forecast AI）</h1>
+    <p class="sub">輸入環境數據，系統將預測即時 AQI 與風險等級</p>
+
+    <div class="card">
+      <label>溫度（°C）</label>
+      <input id="temp" type="number" value="28" />
+
+      <label>濕度（%）</label>
+      <input id="humidity" type="number" value="65" />
+
+      <label>PM2.5（µg/m³）</label>
+      <input id="pm25" type="number" value="35" />
+
+      <label>CO₂（ppm）</label>
+      <input id="co2" type="number" value="600" />
+
+      <button onclick="predictAQI()">AI 預測 AQI</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
