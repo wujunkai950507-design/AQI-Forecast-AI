@@ -1,3 +1,4 @@
+alert("main.js 已載入");
 // 讓按鈕 onclick="predictAQI()" 找得到
 window.predictAQI = function () {
   const t = Number(document.getElementById("temp").value);
