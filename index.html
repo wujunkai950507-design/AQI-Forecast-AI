@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AI 空氣品質預測系統</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -23,13 +24,13 @@
       <label>CO₂（ppm）</label>
       <input id="co2" type="number" value="600" />
 
-      <button id="btnPredict">AI 預測 AQI</button>
-
+      <button id="btnPredict" type="button">AI 預測 AQI</button>
     </div>
 
     <div id="result" class="result hidden"></div>
   </div>
 
+  <!-- JS 一定要放在 body 最底下 -->
   <script src="main.js"></script>
 </body>
 </html>
